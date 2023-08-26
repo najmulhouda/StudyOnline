@@ -42,7 +42,19 @@ section{
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
-
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--gradient);
+}
 header{
     display: flex;
     align-items: center;
@@ -78,7 +90,36 @@ header .navber a:hover{
     cursor: pointer;
     display: none;
 }
-
+/* home section */
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.home .content{
+    flex: 1 1 40rem;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+}
+.home .content h3{
+    color: transparent;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4rem;
+}
+.home .content p{
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: #666;
+}
 
 
 
@@ -138,47 +179,74 @@ header .navber a:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* media queries */
+
+
 @media (max-width:991px){
     html{
-        font-size: 55%;
+    font-size: 55%;
     }
+
     body{
-        padding: 1.5rem;
+    padding:1.5rem;
     }
+
     header{
-        padding: 2rem;
+    padding:2rem;
     }
+
+    section{
+    padding:2rem;
+    }
+
 }
 
-    @media (max-width:768px){
+@media (max-width:768px){
 
-        #menu{
-        display: initial;
-        }
-    
-        header .navbar{
-        position: absolute;
-        top:100%; left:0; right:0;
-        background:#fff;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        border-bottom: .1rem solid rgba(0,0,0,.2);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        }
-    
-        header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        }
-    
-        header .navbar a{
-        font-size: 2.5rem;
-        display: block;
-        margin:2rem 0;
-        text-align:center;
-        }
-    
-        .contact form .inputBox input{
-        width:100%;
-        }
-    
+    #menu{
+    display: initial;
     }
+
+    header .navbar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background:#fff;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+    font-size: 2.5rem;
+    display: block;
+    margin:2rem 0;
+    text-align:center;
+    }
+
+    .contact form .inputBox input{
+    width:100%;
+    }
+
+}
+
+@media (max-width:400px){
+
+    html{
+    font-size: 50%;
+    }
+
+} 
