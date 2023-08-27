@@ -256,10 +256,114 @@ header .navber a:hover{
     height: auto;
     border-radius: 20px;
 }
+/* teacher section */
+.teacher{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.teacher .box{
+    flex: 1 1 23rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 1.5rem;
+    background: #fff;
+    position: relative;
+    text-align: center;
+}
+.teacher .box img{
+    height: 10rem;
+    width: 10rem;
+    margin: .5rem 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.teacher .box h3{
+    font-size: 2.5rem;
+    color: var(--violet);
+}
+.teacher .box span{
+    font-size: 2rem;
+    color: var(--pink);
+}
+.teacher .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
 
+}
+.teacher .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background: var(--pink);
+    color: #fff;
+    border-radius: .5rem;
+    margin: .3rem;
+}
+.teacher .box .share a:hover{
+    background: var(--violet);
+}
 
-
-
+.wrapper {
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+    height: 400px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    margin-left:40rem;
+}
+.wrapper i.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: #343f4f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+}
+i.button:active {
+    transform: scale(0.94) translateY(-50%);
+}
+i#prev {
+    left: 25px;
+}
+i#next {
+    right: 25px;
+}
+.image-container {
+    height: 320px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+.image-container .carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+.carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    border: 10px solid #fff;
+    object-fit: cover;
+}
 
 
 /* media queries */
